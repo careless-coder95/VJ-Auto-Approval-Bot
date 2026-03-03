@@ -22,7 +22,7 @@ async def approve(_, m: Message):
         await app.approve_chat_join_request(op.id, kk.id)
         await app.send_message(
             kk.id,
-            f"**👋 Hello {kk.mention}!\n\n🎉 Welcome to {op.title} 🎉\n\n✅ You are approved automatically!\n💡 Powered by @VJ_Botz**"
+            f"**👋 ʜᴇʟʟᴏ {kk.mention}!\n\n🎉 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {op.title} 🎉\n\n✅ ʏᴏᴜ ᴀʀᴇ ᴀᴘᴘʀᴏᴠᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ!\n💡 ᴘᴏᴡᴇʀᴇᴅ ʙʏ <a href='https://t.me/ll_CarelessxCoder_ll'>˹ᴄᴀʀᴇʟᴇss ꭙ ᴄᴏᴅᴇʀ˼</a>**"
         )
         add_user(kk.id)
     except errors.PeerIdInvalid:
@@ -40,14 +40,14 @@ async def start(_, m: Message):
         try:
             invite_link = await app.create_chat_invite_link(int(cfg.CHID))
         except:
-            await m.reply("**Make Sure I Am Admin In Your Channel**")
+            await m.reply("**🧑‍💻 ᴍᴀᴋᴇ ꜱᴜʀᴇ ɪ ᴀᴍ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ 🧑‍💻**")
             return
 
         # ─── Inline Buttons 3 Rows ───
         key = InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("˹ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ˼", url="https://t.me/AutoAccept_ccbot?startgroup=true")],  # Row 1
-                [InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="https://t.me/CarelessxOwner")],                 # Row 2
+                [InlineKeyboardButton("˹❍ᴡɴᴇʀ˼", url="https://t.me/CarelessxOwner")],                 # Row 2
                 [
                     InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url="https://t.me/ll_CarelessxCoder_ll"),               # Row 3, first button
                     InlineKeyboardButton("˹sᴜᴘᴘᴏʀᴛ˼", url="https://t.me/CarelessxWorld")              # Row 3, second button
@@ -79,7 +79,7 @@ async def start(_, m: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("˹ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ˼", url="https://t.me/AutoAccept_ccbot?startgroup=true")],  # Row 1
-                [InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="https://t.me/CarelessxOwner")],                 # Row 2
+                [InlineKeyboardButton("˹❍ᴡɴᴇʀ˼", url="https://t.me/CarelessxOwner")],                 # Row 2
                 [
                     InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url="https://t.me/ll_CarelessxCoder_ll"),               # Row 3, first button
                     InlineKeyboardButton("˹sᴜᴘᴘᴏʀᴛ˼", url="https://t.me/CarelessxWorld")              # Row 3, second button
@@ -112,12 +112,12 @@ async def chk(_, cb: CallbackQuery):
     try:
         await app.get_chat_member(cfg.CHID, cb.from_user.id)
     except:
-        await cb.answer("🙅‍♂️ You are not joined my channel first join channel then check again. 🙅‍♂️", show_alert=True)
+        await cb.answer("🙅‍♂️ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ᴍʏ ᴄʜᴀɴɴᴇʟ. ꜰɪʀꜱᴛ ᴊᴏɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴛʜᴇɴ ᴄʜᴇᴄᴋ ᴀɢᴀɪɴ  🙅‍♂️", show_alert=True)
         return
     keyboard = InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("˹ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ˼", url="https://t.me/AutoAccept_ccbot?startgroup=true")],  # Row 1
-                [InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="https://t.me/CarelessxOwner")],                 # Row 2
+                [InlineKeyboardButton("˹❍ᴡɴᴇʀ˼", url="https://t.me/CarelessxOwner")],                 # Row 2
                 [
                     InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url="https://t.me/ll_CarelessxCoder_ll"),               # Row 3, first button
                     InlineKeyboardButton("˹sᴜᴘᴘᴏʀᴛ˼", url="https://t.me/CarelessxWorld")              # Row 3, second button
