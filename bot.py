@@ -46,11 +46,11 @@ async def start(_, m: Message):
         # ─── Inline Buttons 3 Rows ───
         key = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("˹ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ˼", url="")],  # Row 1
-                [InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="")],                 # Row 2
+                [InlineKeyboardButton("˹ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ˼", url="https://t.me/AutoAccept_ccbot?startgroup=true")],  # Row 1
+                [InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="https://t.me/CarelessxOwner")],                 # Row 2
                 [
-                    InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url=""),               # Row 3, first button
-                    InlineKeyboardButton("˹sᴜᴘᴘᴏʀᴛ˼", url="")              # Row 3, second button
+                    InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url="https://t.me/ll_CarelessxCoder_ll"),               # Row 3, first button
+                    InlineKeyboardButton("˹sᴜᴘᴘᴏʀᴛ˼", url="https://t.me/CarelessxWorld")              # Row 3, second button
                 ]
             ]
         )
@@ -78,19 +78,30 @@ async def start(_, m: Message):
     # User already joined, normal welcome
     keyboard = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("˹ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ˼", url="")],  # Row 1
-                [InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="")],                 # Row 2
+                [InlineKeyboardButton("˹ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ˼", url="https://t.me/AutoAccept_ccbot?startgroup=true")],  # Row 1
+                [InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="https://t.me/CarelessxOwner")],                 # Row 2
                 [
-                    InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url=""),               # Row 3, first button
-                    InlineKeyboardButton("˹sᴜᴘᴘᴏʀᴛ˼", url="")              # Row 3, second button
+                    InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url="https://t.me/ll_CarelessxCoder_ll"),               # Row 3, first button
+                    InlineKeyboardButton("˹sᴜᴘᴘᴏʀᴛ˼", url="https://t.me/CarelessxWorld")              # Row 3, second button
                 ]
             ]
         )
 
     add_user(m.from_user.id)
     await m.reply_photo(
-        "https://graph.org/file/d57d6f83abb6b8d0efb02.jpg",
-        caption=f"**🦊 Hello {m.from_user.mention}!\nI'm an auto approve [Admin Join Requests](https://t.me/telegram/153) Bot.\nI can approve users in Groups/Channels. Add me to your chat and promote me to admin with add members permission.\n\n__Powered By : @VJ_Botz__**",
+        "https://files.catbox.moe/dgelfj.jpg",
+        caption=f"""**👋 ʜᴇʟʟᴏ {m.from_user.mention}!**
+**❍ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴜᴛᴏ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛᴇʀ ʙᴏᴛ. 🥳**
+**✦━━━━━━━━━━━━━━━━━━━━━✦**
+**🛠 ғᴇᴀᴛᴜʀᴇs :**
+**❍ ᴀᴜᴛᴏ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛᴇʀ ɪɴ ɢʀᴏᴜᴘ.**
+**❍ ɢɪᴠᴇ ᴛʜᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴏғ ɪɴᴠɪᴛᴇ ʟɪɴᴋ & ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ**
+**✦━━━━━━━━━━━━━━━━━━━━━✦**
+**➤ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [ᴍɪsᴛᴇʀ ꭙ sᴛᴀʀᴋ](https://t.me/CarelessxOwner)**
+**➤ ᴍᴏʀᴇ ʙᴏᴛs : [sᴛᴀʀᴋ ꭙ ɴᴇᴛᴡᴏʀᴋ](https://t.me/StarkxNetwrk)**
+**➤ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ᴄᴀʀᴇʟᴇss ꭙ ᴄᴏᴅᴇʀ](https://t.me/ll_CarelessxCoder_ll)**
+**╰─━━━ ✦ ❀ ✦ ❖ ✦ ❀ ✦ ━━━─╯**
+""",
         reply_markup=keyboard
     )
 
@@ -104,14 +115,30 @@ async def chk(_, cb: CallbackQuery):
         await cb.answer("🙅‍♂️ You are not joined my channel first join channel then check again. 🙅‍♂️", show_alert=True)
         return
     keyboard = InlineKeyboardMarkup(
-        [[
-            InlineKeyboardButton("🗯 Channel", url="https://t.me/vj_botz"),
-            InlineKeyboardButton("💬 Support", url="https://t.me/vj_bot_disscussion")
-        ]]
-    )
+            [
+                [InlineKeyboardButton("˹ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ˼", url="https://t.me/AutoAccept_ccbot?startgroup=true")],  # Row 1
+                [InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="https://t.me/CarelessxOwner")],                 # Row 2
+                [
+                    InlineKeyboardButton("˹ᴜᴘᴅᴀᴛᴇ˼", url="https://t.me/ll_CarelessxCoder_ll"),               # Row 3, first button
+                    InlineKeyboardButton("˹sᴜᴘᴘᴏʀᴛ˼", url="https://t.me/CarelessxWorld")              # Row 3, second button
+                ]
+            ]
+        )
+
     add_user(cb.from_user.id)
     await cb.edit_text(
-        text=f"**🦊 Hello {cb.from_user.mention}!\nI'm an auto approve [Admin Join Requests](https://t.me/telegram/153) Bot.\nI can approve users in Groups/Channels. Add me to your chat and promote me to admin with add members permission.\n\n__Powered By : @VJ_Botz__**",
+        text=f"""**👋 ʜᴇʟʟᴏ {m.from_user.mention}!**
+**❍ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴜᴛᴏ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛᴇʀ ʙᴏᴛ. 🥳**
+**✦━━━━━━━━━━━━━━━━━━━━━✦**
+**🛠 ғᴇᴀᴛᴜʀᴇs :**
+**❍ ᴀᴜᴛᴏ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛᴇʀ ɪɴ ɢʀᴏᴜᴘ.**
+**❍ ɢɪᴠᴇ ᴛʜᴇ ᴘᴇʀᴍɪssɪᴏɴ ᴏғ ɪɴᴠɪᴛᴇ ʟɪɴᴋ & ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ**
+**✦━━━━━━━━━━━━━━━━━━━━━✦**
+**➤ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : [ᴍɪsᴛᴇʀ ꭙ sᴛᴀʀᴋ](https://t.me/CarelessxOwner)**
+**➤ ᴍᴏʀᴇ ʙᴏᴛs : [sᴛᴀʀᴋ ꭙ ɴᴇᴛᴡᴏʀᴋ](https://t.me/StarkxNetwrk)**
+**➤ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [ᴄᴀʀᴇʟᴇss ꭙ ᴄᴏᴅᴇʀ](https://t.me/ll_CarelessxCoder_ll)**
+**╰─━━━ ✦ ❀ ✦ ❖ ✦ ❀ ✦ ━━━─╯**
+""",
         reply_markup=keyboard
     )
 
